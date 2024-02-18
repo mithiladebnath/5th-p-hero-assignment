@@ -2,264 +2,388 @@
 <html data-theme="cupcake" lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bus-Ticket-Project</title>
-    <!-- CSS link -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Daisy UI and Tailwind link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus-Ticket-Project</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- DAISY UI AND TAILWIND LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <!-- header section starts from here -->
-    <header class="mx-32 my-8">
-        <nav class="flex justify-between items-center">
-            <h1 class="text-[#030712] font-extrabold text-4xl">P-Ticket</h1>
+  <header class="mx-32 my-8">
+    <nav class="flex items-center justify-between">
+      <h1 class="text-[#030712] font-extrabold text-4xl">P-Ticket</h1>
+      <div class="">
+        <ul class="flex gap-10 mx-auto font-medium text-[16px]">
+          <li>Home</li>
+          <li>About</li>
+          <li>Destination</li>
+          <li>Search</li>
+        </ul>
+      </div>
+      <button
+        class="btn btn-outline btn-success rounded-xl flex gap-3 items-center text-xl font-bold text-[#1DD100] bg-[#1DD1001A]">
+        Bus <span><img src="images/bus-icon.png" alt="" /></span>
+      </button>
+    </nav>
+    <!-- TEMPLATE SECTION -->
+    <section class="mt-12">
+      <div class="min-h-screen pt-20 text-center bg-no-repeat bg-contain"
+        style="background-image: url(images/banner.png)">
+        <h1 class="text-6xl font-extrabold text-white">
+          End-to-End Travel with <br />
+          <span class="text-[#1DD100]">P Paribahan</span>
+        </h1>
+        <p class="font-normal text-[18px] pt-8 text-white">
+          I realize a lot of questions have been asked about buses here.
+          <br />While the thing with the preposition usage was resolved for me
+        </p>
+        <button class="btn rounded-xl items-center text-xl font-bold bg-[#1DD100] text-black border-none mt-5">
+          Buy Tickets
+        </button>
+      </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section class="mt-12 text-center">
+      <h1 class="mb-12 text-4xl font-bold text-center">
+        Best offers for you
+      </h1>
+      <div class="flex items-center justify-between gap-6">
+        <!-- CARD 01 -->
+        <div class="w-[573px] h-[220px] bg-[#FFBF0F] rounded-xl text-left">
+          <div class="flex items-center justify-center gap-5">
             <div class="">
-                <ul class="flex gap-10 mx-auto font-medium text-[16px]">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Destination</li>
-                    <li>Search</li>
-                </ul>
+              <h1 class="text-[40px] font-extrabold font-inter">15% OFF</h1>
+              <p class="text-xl font-medium">on your next purchase</p>
+              <p class="text-[#0307128080]">use by January 2024</p>
             </div>
-            <button
-                class="btn btn-outline btn-success rounded-xl flex gap-3 items-center text-xl font-bold text-[#1DD100] bg-[#1DD1001A]">
-                Bus <span><img src="images/bus-icon.png" alt="" /></span>
-            </button>
-        </nav>
-        <!-- template section  -->
-        <section class="mt-12">
-            <div class="bg-no-repeat bg-contain min-h-screen text-center pt-20"
-                style="background-image: url(images/banner.png)">
-                <h1 class="text-6xl font-extrabold text-white">
-                    End-to-End Travel with <br />
-                    <span class="text-[#1DD100]">P Paribahan</span>
-                </h1>
-                <p class="font-normal text-[18px] pt-8 text-white">
-                    I realize a lot of questions have been asked about buses here.
-                    <br />While the thing with the preposition usage was resolved for me
-                </p>
-                <button class="btn rounded-xl items-center text-xl font-bold bg-[#1DD100] text-black border-none mt-5">
-                    Buy Tickets
+            <span><img src="images/cupon-devider.png" alt="" /></span>
+            <div>
+              <h1 class="text-3xl font-extrabold font-raleway">NEW15</h1>
+              <p class="text-[#0307128080]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 02 -->
+        <div class="w-[573px] h-[220px] bg-[#F78C9C] rounded-xl text-left">
+          <div class="flex items-center justify-center gap-5">
+            <div class="">
+              <h1 class="text-[40px] font-extrabold font-inter">20% OFF</h1>
+              <p class="text-xl font-medium">on your next purchase</p>
+              <p class="text-[#0307128080]">use by January 2024</p>
+            </div>
+            <span><img src="images/cupon-devider.png" alt="" /></span>
+            <div>
+              <h1 class="text-3xl font-extrabold font-raleway">Couple 20</h1>
+              <p class="text-[#0307128080]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- OFFER BUTTON -->
+      <button class="btn text-xl font-medium bg-none border-green-300 text-[#1DD100] rounded-xl mt-16">
+        See All Offers
+      </button>
+    </section>
+  </header>
+  <main class="my-20 border-t-2 border-green-300 rounded-3xl bg-slate-100">
+    <!-- HEADING SECTION------------------------------------- -->
+    <section class="mt-20 text-center">
+      <h1 class="text-4xl font-bold">P.H Paribahan</h1>
+      <p class="text-[16px] font-normal mt-5 opacity-70">
+        Are you worried about taking the bus in a foreign country? <br />
+        Which bus will you take? How much does it cost? Will you have to
+        change buses?
+      </p>
+    </section>
+
+    <!-- GREEN LINE PORIBOHON-->
+    <section class="mx-32 mt-10">
+      <div class="w-full h-[418px] bg-[#ddd] rounded-2xl text-left">
+        <div class="flex">
+          <!--NAVIGATION BAR -->
+          <div>
+            <div class="flex items-center justify-between h-10 gap-40 p-10">
+              <h1 class="flex items-center gap-2 text-3xl font-bold">
+                <span><img src="images/bus-logo.png" alt="" /></span>
+                Greenline Paribahan
+              </h1>
+
+              <button
+                class="btn btn-outline btn-success rounded-xl flex gap-2 items-center text-xl font-bold text-[#1DD100] bg-[#1DD1001A]">
+                <span><img src="images/seat-gray.png" alt="" /></span>
+                40 Seats left
+              </button>
+            </div>
+            <!-- DHAKA TO SYLHET TIME --------------------------------->
+            <div class="bg-[#c5c5c5] w-[744px] h-80 mx-5 rounded-xl">
+              <!-- DIV NUMBER 01 -------------------------------------->
+              <div class="flex items-center justify-between p-5 mx-6">
+                <h1>Routine</h1>
+                <p class="font-medium">Dhaka - Sylhet</p>
+              </div>
+              <div class="divider"></div>
+
+              <!-- DIV NUMBER  02 ------------------------------------>
+              <div class="flex items-center justify-between p-5 mx-6">
+                <h1>Departure Time</h1>
+                <p class="font-medium">9:00 PM</p>
+              </div>
+              <div class="divider"></div>
+
+              <!-- DIV NUMBER  03 --------------------------------------->
+              <div class="flex items-center justify-between p-5 mx-6">
+                <!-- BUTTON NUMBER 01------------------------------------ -->
+                <button class="btn btn-active rounded-2xl">
+                  Boarding Point - Laxmipur
                 </button>
-            </div>
-        </section>
 
-        <!-- offer section starts from here -->
-        <section class="mt-12 text-center">
-            <h1 class="text-4xl font-bold text-center mb-12">
-                Best offers for you
-            </h1>
-            <div class="flex items-center justify-between gap-6">
-                <!-- card 01 -->
-                <div class="w-[573px] h-[220px] bg-[#FFBF0F] rounded-xl text-left">
-                    <div class="flex items-center justify-center gap-5">
-                        <div class="">
-                            <h1 class="text-[40px] font-extrabold font-inter">15% OFF</h1>
-                            <p class="text-xl font-medium">on your next purchase</p>
-                            <p class="text-[#0307128080]">use by January 2024</p>
-                        </div>
-                        <span><img src="images/cupon-devider.png" alt="" /></span>
-                        <div>
-                            <h1 class="text-3xl font-extrabold font-raleway">NEW15</h1>
-                            <p class="text-[#0307128080]">Coupon Code</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- BUTTON NUMBER 02------------------------------------- -->
+                <button class="btn btn-active rounded-2xl">
+                  Dropping Point - Bogura
+                </button>
 
-                <!-- card 02 -->
-                <div class="w-[573px] h-[220px] bg-[#F78C9C] rounded-xl text-left">
-                    <div class="flex items-center justify-center gap-5">
-                        <div class="">
-                            <h1 class="text-[40px] font-extrabold font-inter">20% OFF</h1>
-                            <p class="text-xl font-medium">on your next purchase</p>
-                            <p class="text-[#0307128080]">use by January 2024</p>
-                        </div>
-                        <span><img src="images/cupon-devider.png" alt="" /></span>
-                        <div>
-                            <h1 class="text-3xl font-extrabold font-raleway">Couple 20</h1>
-                            <p class="text-[#0307128080]">Coupon Code</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- BUTTON NUMBER 03 --------------------------------------->
+                <button class="btn btn-active rounded-2xl">
+                  Est. Time - 11 Hour
+                </button>
+              </div>
             </div>
-            <!-- Offer Button -->
-            <button class="btn text-xl font-medium bg-none border-green-300 text-[#1DD100] rounded-xl mt-16">
-                See All Offers
-            </button>
-        </section>
-    </header>
-    <!-- header section ends here  -->
-    <!-- here is our main section  -->
-    <main class="my-20 border-green-300 border-t-2 rounded-3xl bg-slate-100">
-        <!-- heading of my main section  -->
-        <section class="text-center mt-20">
-            <h1 class="text-4xl font-bold">P.H Paribahan</h1>
-            <p class="text-[16px] font-normal mt-5 opacity-70">
-                Are you worried about taking the bus in a foreign country? <br />
-                Which bus will you take? How much does it cost? Will you have to
-                change buses?
+          </div>
+
+          <span><img src="images/info-devider.png" alt="" /></span>
+
+          <!-- TICKET PRICE------------------------------------------>
+          <div class="flex flex-col items-center mx-auto mt-36">
+            <img class="w-12 h-12 mb-4" src="images/fare.png" alt="" />
+            <h1 class="text-3xl font-extrabold font-raleway">550 Taka</h1>
+            <p class="text-lg font-medium text-gray-600 font-inter">
+              Per Seat
             </p>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- greenline Section -->
-        <section class="mx-32 mt-10">
-            <div class="w-full h-[418px] bg-slate-200 rounded-2xl text-left">
-                <div class="flex">
-                    <!-- Nav-Bar Section -->
-                    <div>
-                        <div class="flex items-center justify-between h-10 p-10 gap-40">
-                            <h1 class="flex items-center gap-2 text-3xl font-bold">
-                                <span><img src="images/bus-logo.png" alt="" /></span>
-                                Greenline Paribahan
-                            </h1>
+    <!-- SELECTING SEAT SECTION------------------------------------- -->
+    <section class="mx-32 mt-10 bg-[#ddd] rounded-lg">
+      <!-- PARENT DIV -------------------------------------------------->
+      <div class="flex justify-between gap-2">
+        <!-- ALL BUS DESIGN-------------------------------------------->
+        <div class="border-zinc-400 border-r-4 w-[60%] border-dotted">
+          <h1 class="pt-2 text-2xl font-semibold ml-9">Select Your Seat</h1>
+          <div class="divider"></div>
+          <!-- DRIVER POSITION-->
+          <div class="flex items-center justify-between mx-9">
+            <!-- PART 01 -->
+            <h1 class="flex items-center">
+              <span><img src="images/seat-gray.png" alt="" /></span>
+              Available
+            </h1>
+            <!-- PART 02 -->
+            <h1 class="flex items-center">
+              <span><img src="images/seat-green-filled.png" alt="" /></span>
+              Selected
+            </h1>
+          </div>
+          <div class="divider"></div>
+          <!-- DRIVER SEAT -->
+          <div class="flex justify-end mr-7">
+            <button class="w-20 h-10 rounded-lg btn-active">
+              <img class="mx-auto" src="images/wheel.png" alt="" />
+            </button>
+          </div>
 
-                            <button
-                                class="btn btn-outline btn-success rounded-xl flex gap-2 items-center text-xl font-bold text-[#1DD100] bg-[#1DD1001A]">
-                                <span><img src="images/seat-gray.png" alt="" /></span>
-                                40 Seats left
-                            </button>
-                        </div>
-                        <!-- dhaka to sylhet routine time -->
-                        <div class="bg-[#acaaaa] w-[744px] h-80 mx-5 rounded-xl">
-                            <!--iv number 01 -->
-                            <div class="flex items-center justify-between mx-6 p-5">
-                                <h1>Routine</h1>
-                                <p class="font-medium">Dhaka - Sylhet</p>
-                            </div>
-                            <div class="divider"></div>
-
-                            <!-- div number 02 -->
-                            <div class="flex items-center justify-between mx-6 p-5">
-                                <h1>Departure Time</h1>
-                                <p class="font-medium">9:00 PM</p>
-                            </div>
-                            <div class="divider"></div>
-
-                            <!-- div number 03 -->
-                            <div class="flex items-center justify-between mx-6 p-5">
-                                <!-- Button number 01 -->
-                                <button class="btn btn-active rounded-2xl">
-                                    Boarding Point - Laxmipur
-                                </button>
-
-                                <!-- Button number 02 -->
-                                <button class="btn btn-active rounded-2xl">
-                                    Dropping Point - Bogura
-                                </button>
-
-                                <!-- Button number 03 -->
-                                <button class="btn btn-active rounded-2xl">
-                                    Est. Time - 11 Hour
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <span><img src="images/info-devider.png" alt="" /></span>
-
-                    <!-- ticket price section-->
-                    <div class="flex flex-col items-center mt-36 mx-auto">
-                        <img class="w-12 h-12 mb-4" src="images/fare.png" alt="" />
-                        <h1 class="text-3xl font-extrabold font-raleway">550 Taka</h1>
-                        <p class="text-lg font-medium text-gray-600 font-inter">
-                            Per Seat
-                        </p>
-                    </div>
-                </div>
+          <!-- PARENT DIV-->
+          <div class="grid grid-cols-1 mt-6">
+            <div class="grid grid-cols-5 gap-6">
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                A
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">A1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">A2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">A3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">A4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                B
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">B1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">B2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">B3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">B4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                C
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">C1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">C2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">C3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">C4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                D
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">D1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">D2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">D3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">D4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                E
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">E1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">E2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">E3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">E4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                F
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">F1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">F2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">F3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">F4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                G
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">G1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">G2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">G3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">G4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                H
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">H1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">H2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">H3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">H4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                I
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">I1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">I2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">I3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">I4</button>
+              <button class="text-lg font-medium rounded-md text-[#8c8e92]">
+                J
+              </button>
+              <button class="w-20 h-10 rounded-lg btn-active">J1</button>
+              <button class="w-20 h-10 rounded-lg btn-active">J2</button>
+              <button class="w-20 h-10 rounded-lg btn-active">J3</button>
+              <button class="w-20 h-10 rounded-lg btn-active">J4</button>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- select your seat section -->
-        <section class="mx-32 mt-10 bg-slate-100">
-
-            <div class="flex items-center justify-between gap-2">
-
-                <div class="border-green-200 border-2 w-[60%]">
-                    <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-                    <div class="divider"></div>
-
-                    <div class="flex items-center justify-between">
-                        <!-- Part 01 -->
-                        <h1 class="flex items-center">
-                            <span><img src="images/seat-gray.png" alt="" /></span>
-                            Available
-                        </h1>
-                        <!-- Part 02 -->
-                        <h1 class="flex items-center">
-                            <span><img src="images/seat-green-filled.png" alt="" /></span>
-                            Selected
-                        </h1>
-                    </div>
-                    <div class="divider"></div>
-
-                    <div class="float-right">
-                        <button class="btn-active rounded-lg w-20 h-10 mr-10">🚘</button>
-                    </div>
-
-
-                    <!-- Passenger Seat -->
-                    <div class="flex justify-between mx-10 mt-20">
-                        <!-- Div 01 -->
-                        <div class="grid grid-cols-2 gap-6">
-                            <button class="btn-active rounded-lg w-20 h-10">A1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">A2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">B1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">B2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">C1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">C2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">D1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">D2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">E1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">E2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">F1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">F2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">G1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">G2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">H1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">H2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">I1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">I2</button>
-                            <button class="btn-active rounded-lg w-20 h-10">J1</button>
-                            <button class="btn-active rounded-lg w-20 h-10">J2</button>
-                        </div>
-                        <!-- Div 02 -->
-                        <div class="grid grid-cols-2 gap-6">
-                            <button class="btn-active rounded-lg w-20 h-10">A3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">A3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">B4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">B4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">C3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">C3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">D4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">D4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">E3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">E3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">F4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">F4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">G3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">G3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">H4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">H4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">I3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">I3</button>
-                            <button class="btn-active rounded-lg w-20 h-10">J4</button>
-                            <button class="btn-active rounded-lg w-20 h-10">J4</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--calculate all function -->
-                <div class="w-[40%] border-green-200 border-2">
-                    <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-                </div>
+        <!-- CALCULATE  -->
+        <div class="w-[40%] border-green-200">
+          <h1 class="p-4 text-2xl font-semibold">Select Your Seat</h1>
+          <div class="divider"></div>
+          <!-- SEAT ECONOMOY CALCULATE -->
+          <div class="mx-5 bg-[#c5c5c5] p-5 rounded-lg">
+            <div class="flex items-center justify-between font-semibold text-black">
+              <!-------------------------------------->
+              <p id="seat-count">
+                Seat
+                <button class="bg-[#1DD100] w-auto h-10 text-white font-bold rounded-lg p-2">
+                  0
+                </button>
+              </p>
+              <p>Class</p>
+              <p>Price</p>
             </div>
-        </section>
-    </main>
+            <div class="divider"></div>
+            <div class="flex items-center justify-between mb-4 font-normal opacity-70">
+              <p>C2</p>
+              <p>Economoy</p>
+              <p>550</p>
+            </div>
+            <div class="flex items-center justify-between font-normal opacity-70">
+              <p>C2</p>
+              <p>Economoy</p>
+              <p>550</p>
+            </div>
+            <div class="divider"></div>
+            <div class="flex items-center justify-between mb-4 font-semibold text-black">
+              <p>Total Price</p>
+              <!-- ------------------------------------------------- -->
+              <p id="total-price">BDT 00</p>
+            </div>
+            <!-- INPUT AND BUTTON -->
+            <div class="relative">
+              <input class="w-full h-12 pl-5 rounded-lg" type="text" placeholder="Have any copupon?" />
+              <button
+                class="bg-[#1DD100] w-16 h-9 text-center text-white font-medium rounded-lg absolute right-2 top-1">
+                Apply
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-4 font-semibold text-black">
+              <p>Grand Total</p>
+              <!--------------------------------->
+              <p id="grand-total">BDT 00</p>
+            </div>
+          </div>
 
+          <!-- PASSENGER SECTION -->
+          <div class="p-5 mt-5 rounded-lg">
+            <div>
+              <p class="font-medium text-[18px]">Passenger Name*</p>
+              <input class="w-full h-12 pl-5 border-2 rounded-lg" type="text" placeholder="Enter your name" />
+            </div>
+            <div class="mt-3">
+              <p class="font-medium text-[18px]">Phone Number*</p>
+              <input class="w-full h-12 pl-5 border-2 rounded-lg" type="number" placeholder="Enter your phone number" />
+            </div>
+            <div class="mt-3">
+              <p class="font-medium text-[18px]">Email ID*</p>
+              <input class="w-full h-12 pl-5 border-2 rounded-lg" type="email" placeholder="Enter your email id" />
+            </div>
+            <button class="w-full h-12 bg-[#1DD100] text-white font-bold text-xl rounded-lg mt-6">
+              Next
+            </button>
+            <div class="flex items-center justify-between mx-6 mt-4">
+              <p class="text-sm underline opacity-70">Trams and Conditions</p>
+              <p class="text-sm underline opacity-70">Cancellation Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer class="px-32 py-10 bg-black text-neutral-content">
+      <div class="flex items-center justify-between border-b border-gray-500 border-dashed">
+        <div>
+          <h1 class="text-2xl font-bold text-white">P-Ticket</h1>
+          <p class="opacity-70">
+            P-Ticket is a digital platform to make your<br />daily commuting
+            better.
+          </p>
+        </div>
+
+        <div class="mb-10">
+          <h6 class="text-white footer-title">Download our app</h6>
+          <button class="flex items-center gap-2 p-3 text-xl border-2 rounded-lg bg-none">
+            <img src="images/playstore.png" alt="" />Google Play
+          </button>
+        </div>
+      </div>
+      <!-- Div number 02 -->
+      <div class="flex items-center justify-between mt-6 text-white">
+        <div>
+          <h1 class="opacity-70">
+            @all rights reserved, P-Ticket services limited.2024
+          </h1>
+        </div>
+        <div class="flex items-center gap-6">
+          <h1>Terms & condition</h1>
+          <h1>Return & refund policy</h1>
+          <h1>Privacy policy</h1>
+        </div>
+      </div>
+    </footer>
+  </footer>
 </body>
 
 </html>
